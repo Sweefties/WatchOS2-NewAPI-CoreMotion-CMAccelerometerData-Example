@@ -1,0 +1,549 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7E3B51001B9CFF0F002D7D23 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3B50FF1B9CFF0F002D7D23 /* AppDelegate.swift */; };
+		7E3B51021B9CFF0F002D7D23 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3B51011B9CFF0F002D7D23 /* ViewController.swift */; };
+		7E3B51051B9CFF0F002D7D23 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E3B51031B9CFF0F002D7D23 /* Main.storyboard */; };
+		7E3B51071B9CFF0F002D7D23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E3B51061B9CFF0F002D7D23 /* Assets.xcassets */; };
+		7E3B510A1B9CFF0F002D7D23 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E3B51081B9CFF0F002D7D23 /* LaunchScreen.storyboard */; };
+		7E3B510F1B9CFF0F002D7D23 /* WatchOS2-NewAPI-CoreMotion-CMAccelerometerData-Example WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 7E3B510E1B9CFF0F002D7D23 /* WatchOS2-NewAPI-CoreMotion-CMAccelerometerData-Example WatchKit App.app */; };
+		7E3B51151B9CFF0F002D7D23 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E3B51131B9CFF0F002D7D23 /* Interface.storyboard */; };
+		7E3B51171B9CFF0F002D7D23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E3B51161B9CFF0F002D7D23 /* Assets.xcassets */; };
+		7E3B511E1B9CFF0F002D7D23 /* WatchOS2-NewAPI-CoreMotion-CMAccelerometerData-Example WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 7E3B511D1B9CFF0F002D7D23 /* WatchOS2-NewAPI-CoreMotion-CMAccelerometerData-Example WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		7E3B51231B9CFF0F002D7D23 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3B51221B9CFF0F002D7D23 /* InterfaceController.swift */; };
+		7E3B51251B9CFF0F002D7D23 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3B51241B9CFF0F002D7D23 /* ExtensionDelegate.swift */; };
+		7E3B51271B9CFF0F002D7D23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E3B51261B9CFF0F002D7D23 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7E3B51101B9CFF0F002D7D23 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7E3B50F41B9CFF0F002D7D23 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7E3B510D1B9CFF0F002D7D23;
+			remoteInfo = "WatchOS2-NewAPI-CoreMotion-CMAccelerometerData-Example WatchKit App";
+		};
+		7E3B511F1B9CFF0F002D7D23 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7E3B50F41B9CFF0F002D7D23 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7E3B511C1B9CFF0F002D7D23;
+			remoteInfo = "WatchOS2-NewAPI-CoreMotion-CMAccelerometerData-Example WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7E3B512E1B9CFF0F002D7D23 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				7E3B511E1B9CFF0F002D7D23 /* WatchOS2-NewAPI-CoreMotion-CMAccelerometerData-Example WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E3B51321B9CFF0F002D7D23 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				7E3B510F1B9CFF0F002D7D23 /* WatchOS2-NewAPI-CoreMotion-CMAccelerometerData-Example WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		7E3B50FC1B9CFF0F002D7D23 /* WatchOS2-NewAPI-CoreMotion-CMAccelerometerData-Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WatchOS2-NewAPI-CoreMotion-CMAccelerometerData-Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E3B50FF1B9CFF0F002D7D23 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7E3B51011B9CFF0F002D7D23 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7E3B51041B9CFF0F002D7D23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7E3B51061B9CFF0F002D7D23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7E3B51091B9CFF0F002D7D23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7E3B510B1B9CFF0F002D7D23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E3B510E1B9CFF0F002D7D23 /* WatchOS2-NewAPI-CoreMotion-CMAccelerometerData-Example WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WatchOS2-NewAPI-CoreMotion-CMAccelerometerData-Example WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E3B51141B9CFF0F002D7D23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		7E3B51161B9CFF0F002D7D23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7E3B51181B9CFF0F002D7D23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E3B511D1B9CFF0F002D7D23 /* WatchOS2-NewAPI-CoreMotion-CMAccelerometerData-Example WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WatchOS2-NewAPI-CoreMotion-CMAccelerometerData-Example WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E3B51221B9CFF0F002D7D23 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		7E3B51241B9CFF0F002D7D23 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		7E3B51261B9CFF0F002D7D23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7E3B51281B9CFF0F002D7D23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7E3B50F91B9CFF0F002D7D23 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E3B511A1B9CFF0F002D7D23 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7E3B50F31B9CFF0F002D7D23 = {
+			isa = PBXGroup;
+			children = (
+				7E3B50FE1B9CFF0F002D7D23 /* WatchOS2-NewAPI-CoreMotion-CMAccelerometerData-Example */,
+				7E3B51121B9CFF0F002D7D23 /* WatchOS2-NewAPI-CoreMotion-CMAccelerometerData-Example WatchKit App */,
+				7E3B51211B9CFF0F002D7D23 /* WatchOS2-NewAPI-CoreMotion-CMAccelerometerData-Example WatchKit Extension */,
+				7E3B50FD1B9CFF0F002D7D23 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7E3B50FD1B9CFF0F002D7D23 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7E3B50FC1B9CFF0F002D7D23 /* WatchOS2-NewAPI-CoreMotion-CMAccelerometerData-Example.app */,
+				7E3B510E1B9CFF0F002D7D23 /* WatchOS2-NewAPI-CoreMotion-CMAccelerometerData-Example WatchKit App.app */,
+				7E3B511D1B9CFF0F002D7D23 /* WatchOS2-NewAPI-CoreMotion-CMAccelerometerData-Example WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7E3B50FE1B9CFF0F002D7D23 /* WatchOS2-NewAPI-CoreMotion-CMAccelerometerData-Example */ = {
+			isa = PBXGroup;
+			children = (
+				7E3B50FF1B9CFF0F002D7D23 /* AppDelegate.swift */,
+				7E3B51011B9CFF0F002D7D23 /* ViewController.swift */,
+				7E3B51031B9CFF0F002D7D23 /* Main.storyboard */,
+				7E3B51061B9CFF0F002D7D23 /* Assets.xcassets */,
+				7E3B51081B9CFF0F002D7D23 /* LaunchScreen.storyboard */,
+				7E3B510B1B9CFF0F002D7D23 /* Info.plist */,
+			);
+			path = "WatchOS2-NewAPI-CoreMotion-CMAccelerometerData-Example";
+			sourceTree = "<group>";
+		};
+		7E3B51121B9CFF0F002D7D23 /* WatchOS2-NewAPI-CoreMotion-CMAccelerometerData-Example WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				7E3B51131B9CFF0F002D7D23 /* Interface.storyboard */,
+				7E3B51161B9CFF0F002D7D23 /* Assets.xcassets */,
+				7E3B51181B9CFF0F002D7D23 /* Info.plist */,
+			);
+			path = "WatchOS2-NewAPI-CoreMotion-CMAccelerometerData-Example WatchKit App";
+			sourceTree = "<group>";
+		};
+		7E3B51211B9CFF0F002D7D23 /* WatchOS2-NewAPI-CoreMotion-CMAccelerometerData-Example WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				7E3B51221B9CFF0F002D7D23 /* InterfaceController.swift */,
+				7E3B51241B9CFF0F002D7D23 /* ExtensionDelegate.swift */,
+				7E3B51261B9CFF0F002D7D23 /* Assets.xcassets */,
+				7E3B51281B9CFF0F002D7D23 /* Info.plist */,
+			);
+			path = "WatchOS2-NewAPI-CoreMotion-CMAccelerometerData-Example WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7E3B50FB1B9CFF0F002D7D23 /* WatchOS2-NewAPI-CoreMotion-CMAccelerometerData-Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E3B51331B9CFF0F002D7D23 /* Build configuration list for PBXNativeTarget "WatchOS2-NewAPI-CoreMotion-CMAccelerometerData-Example" */;
+			buildPhases = (
+				7E3B50F81B9CFF0F002D7D23 /* Sources */,
+				7E3B50F91B9CFF0F002D7D23 /* Frameworks */,
+				7E3B50FA1B9CFF0F002D7D23 /* Resources */,
+				7E3B51321B9CFF0F002D7D23 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7E3B51111B9CFF0F002D7D23 /* PBXTargetDependency */,
+			);
+			name = "WatchOS2-NewAPI-CoreMotion-CMAccelerometerData-Example";
+			productName = "WatchOS2-NewAPI-CoreMotion-CMAccelerometerData-Example";
+			productReference = 7E3B50FC1B9CFF0F002D7D23 /* WatchOS2-NewAPI-CoreMotion-CMAccelerometerData-Example.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7E3B510D1B9CFF0F002D7D23 /* WatchOS2-NewAPI-CoreMotion-CMAccelerometerData-Example WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E3B512F1B9CFF0F002D7D23 /* Build configuration list for PBXNativeTarget "WatchOS2-NewAPI-CoreMotion-CMAccelerometerData-Example WatchKit App" */;
+			buildPhases = (
+				7E3B510C1B9CFF0F002D7D23 /* Resources */,
+				7E3B512E1B9CFF0F002D7D23 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7E3B51201B9CFF0F002D7D23 /* PBXTargetDependency */,
+			);
+			name = "WatchOS2-NewAPI-CoreMotion-CMAccelerometerData-Example WatchKit App";
+			productName = "WatchOS2-NewAPI-CoreMotion-CMAccelerometerData-Example WatchKit App";
+			productReference = 7E3B510E1B9CFF0F002D7D23 /* WatchOS2-NewAPI-CoreMotion-CMAccelerometerData-Example WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		7E3B511C1B9CFF0F002D7D23 /* WatchOS2-NewAPI-CoreMotion-CMAccelerometerData-Example WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E3B512B1B9CFF0F002D7D23 /* Build configuration list for PBXNativeTarget "WatchOS2-NewAPI-CoreMotion-CMAccelerometerData-Example WatchKit Extension" */;
+			buildPhases = (
+				7E3B51191B9CFF0F002D7D23 /* Sources */,
+				7E3B511A1B9CFF0F002D7D23 /* Frameworks */,
+				7E3B511B1B9CFF0F002D7D23 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WatchOS2-NewAPI-CoreMotion-CMAccelerometerData-Example WatchKit Extension";
+			productName = "WatchOS2-NewAPI-CoreMotion-CMAccelerometerData-Example WatchKit Extension";
+			productReference = 7E3B511D1B9CFF0F002D7D23 /* WatchOS2-NewAPI-CoreMotion-CMAccelerometerData-Example WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7E3B50F41B9CFF0F002D7D23 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = Sweefties;
+				TargetAttributes = {
+					7E3B50FB1B9CFF0F002D7D23 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					7E3B510D1B9CFF0F002D7D23 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					7E3B511C1B9CFF0F002D7D23 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+				};
+			};
+			buildConfigurationList = 7E3B50F71B9CFF0F002D7D23 /* Build configuration list for PBXProject "WatchOS2-NewAPI-CoreMotion-CMAccelerometerData-Example" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7E3B50F31B9CFF0F002D7D23;
+			productRefGroup = 7E3B50FD1B9CFF0F002D7D23 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7E3B50FB1B9CFF0F002D7D23 /* WatchOS2-NewAPI-CoreMotion-CMAccelerometerData-Example */,
+				7E3B510D1B9CFF0F002D7D23 /* WatchOS2-NewAPI-CoreMotion-CMAccelerometerData-Example WatchKit App */,
+				7E3B511C1B9CFF0F002D7D23 /* WatchOS2-NewAPI-CoreMotion-CMAccelerometerData-Example WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7E3B50FA1B9CFF0F002D7D23 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E3B510A1B9CFF0F002D7D23 /* LaunchScreen.storyboard in Resources */,
+				7E3B51071B9CFF0F002D7D23 /* Assets.xcassets in Resources */,
+				7E3B51051B9CFF0F002D7D23 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E3B510C1B9CFF0F002D7D23 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E3B51171B9CFF0F002D7D23 /* Assets.xcassets in Resources */,
+				7E3B51151B9CFF0F002D7D23 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E3B511B1B9CFF0F002D7D23 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E3B51271B9CFF0F002D7D23 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7E3B50F81B9CFF0F002D7D23 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E3B51021B9CFF0F002D7D23 /* ViewController.swift in Sources */,
+				7E3B51001B9CFF0F002D7D23 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E3B51191B9CFF0F002D7D23 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E3B51251B9CFF0F002D7D23 /* ExtensionDelegate.swift in Sources */,
+				7E3B51231B9CFF0F002D7D23 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7E3B51111B9CFF0F002D7D23 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7E3B510D1B9CFF0F002D7D23 /* WatchOS2-NewAPI-CoreMotion-CMAccelerometerData-Example WatchKit App */;
+			targetProxy = 7E3B51101B9CFF0F002D7D23 /* PBXContainerItemProxy */;
+		};
+		7E3B51201B9CFF0F002D7D23 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7E3B511C1B9CFF0F002D7D23 /* WatchOS2-NewAPI-CoreMotion-CMAccelerometerData-Example WatchKit Extension */;
+			targetProxy = 7E3B511F1B9CFF0F002D7D23 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7E3B51031B9CFF0F002D7D23 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7E3B51041B9CFF0F002D7D23 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7E3B51081B9CFF0F002D7D23 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7E3B51091B9CFF0F002D7D23 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		7E3B51131B9CFF0F002D7D23 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7E3B51141B9CFF0F002D7D23 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7E3B51291B9CFF0F002D7D23 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7E3B512A1B9CFF0F002D7D23 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7E3B512C1B9CFF0F002D7D23 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "WatchOS2-NewAPI-CoreMotion-CMAccelerometerData-Example WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sweefties.WatchOS2-NewAPI-CoreMotion-CMAccelerometerData-Example.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		7E3B512D1B9CFF0F002D7D23 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "WatchOS2-NewAPI-CoreMotion-CMAccelerometerData-Example WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sweefties.WatchOS2-NewAPI-CoreMotion-CMAccelerometerData-Example.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		7E3B51301B9CFF0F002D7D23 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = WatchOS2_NewAPI_CoreMotion_CMAccelerometerData_Example_WatchKit_Extension;
+				INFOPLIST_FILE = "WatchOS2-NewAPI-CoreMotion-CMAccelerometerData-Example WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sweefties.WatchOS2-NewAPI-CoreMotion-CMAccelerometerData-Example.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		7E3B51311B9CFF0F002D7D23 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = WatchOS2_NewAPI_CoreMotion_CMAccelerometerData_Example_WatchKit_Extension;
+				INFOPLIST_FILE = "WatchOS2-NewAPI-CoreMotion-CMAccelerometerData-Example WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sweefties.WatchOS2-NewAPI-CoreMotion-CMAccelerometerData-Example.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		7E3B51341B9CFF0F002D7D23 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "WatchOS2-NewAPI-CoreMotion-CMAccelerometerData-Example/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sweefties.WatchOS2-NewAPI-CoreMotion-CMAccelerometerData-Example";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		7E3B51351B9CFF0F002D7D23 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "WatchOS2-NewAPI-CoreMotion-CMAccelerometerData-Example/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sweefties.WatchOS2-NewAPI-CoreMotion-CMAccelerometerData-Example";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7E3B50F71B9CFF0F002D7D23 /* Build configuration list for PBXProject "WatchOS2-NewAPI-CoreMotion-CMAccelerometerData-Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E3B51291B9CFF0F002D7D23 /* Debug */,
+				7E3B512A1B9CFF0F002D7D23 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7E3B512B1B9CFF0F002D7D23 /* Build configuration list for PBXNativeTarget "WatchOS2-NewAPI-CoreMotion-CMAccelerometerData-Example WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E3B512C1B9CFF0F002D7D23 /* Debug */,
+				7E3B512D1B9CFF0F002D7D23 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7E3B512F1B9CFF0F002D7D23 /* Build configuration list for PBXNativeTarget "WatchOS2-NewAPI-CoreMotion-CMAccelerometerData-Example WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E3B51301B9CFF0F002D7D23 /* Debug */,
+				7E3B51311B9CFF0F002D7D23 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7E3B51331B9CFF0F002D7D23 /* Build configuration list for PBXNativeTarget "WatchOS2-NewAPI-CoreMotion-CMAccelerometerData-Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E3B51341B9CFF0F002D7D23 /* Debug */,
+				7E3B51351B9CFF0F002D7D23 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7E3B50F41B9CFF0F002D7D23 /* Project object */;
+}
