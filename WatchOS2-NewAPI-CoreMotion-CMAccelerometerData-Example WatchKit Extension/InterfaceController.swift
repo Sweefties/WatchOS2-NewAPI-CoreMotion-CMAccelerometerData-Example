@@ -21,12 +21,12 @@ class InterfaceController: WKInterfaceController {
     @IBOutlet var zValues: WKInterfaceLabel!
 
     // MARK: - Properties
-    private let motionManager = CMMotionManager()
+    fileprivate let motionManager = CMMotionManager()
     
     
     // MARK: - Context Initializer
-    override func awakeWithContext(context: AnyObject?) {
-        super.awakeWithContext(context)
+    override func awake(withContext context: Any?) {
+        super.awake(withContext: context)
         
         // Configure interface objects here.
         self.xValues.setText("-")
@@ -58,13 +58,13 @@ class InterfaceController: WKInterfaceController {
         self.motionManager.accelerometerUpdateInterval = 0.1
         
         // get current accelerometerData
-        if self.motionManager.accelerometerAvailable {
+        if self.motionManager.isAccelerometerAvailable {
             
             // operation main queue
-            let mainQueue: NSOperationQueue = NSOperationQueue.mainQueue()
+            let mainQueue: OperationQueue = OperationQueue.main
            
             // start accelerometer updates
-            self.motionManager.startAccelerometerUpdatesToQueue(mainQueue, withHandler: { (accelerometerData:CMAccelerometerData?, error:NSError?) -> Void in
+            self.motionManager.startAccelerometerUpdates(to: mainQueue, withHandler: { (accelerometerData:CMAccelerometerData?, error:NSError?) -> Void in
                 // errors
                 if (error != nil) {
                     print("error: \(error?.localizedDescription)")
@@ -87,7 +87,7 @@ class InterfaceController: WKInterfaceController {
                         self.zValues.setText(z)
                     }
                 }
-            })
+            } as! CMAccelerometerHandler)
         }
     }
 }

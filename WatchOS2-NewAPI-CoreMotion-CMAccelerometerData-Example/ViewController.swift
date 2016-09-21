@@ -12,7 +12,7 @@ import CoreMotion
 class ViewController: UIViewController {
 
     // MARK: - Property
-    private let motionManager = CMMotionManager()
+    fileprivate let motionManager = CMMotionManager()
     
     
     // MARK: - Calls
@@ -34,9 +34,9 @@ class ViewController: UIViewController {
     
         self.motionManager.accelerometerUpdateInterval = 0.1
         
-        if self.motionManager.accelerometerAvailable {
-            let mainQueue: NSOperationQueue = NSOperationQueue.mainQueue()
-            self.motionManager.startAccelerometerUpdatesToQueue(mainQueue, withHandler: { (accelerometerData:CMAccelerometerData?, error:NSError?) -> Void in
+        if self.motionManager.isAccelerometerAvailable {
+            let mainQueue: OperationQueue = OperationQueue.main
+            self.motionManager.startAccelerometerUpdates(to: mainQueue, withHandler: { (accelerometerData:CMAccelerometerData?, error:NSError?) -> Void in
                 //
                 if (error != nil) {
                     print("error: \(error?.localizedDescription)")
@@ -51,7 +51,7 @@ class ViewController: UIViewController {
                         print("z: \(z)")
                     }
                 }
-            })
+            } as! CMAccelerometerHandler)
         }
     }
 
